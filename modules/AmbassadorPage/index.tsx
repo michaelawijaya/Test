@@ -70,6 +70,40 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
+        <section className="flex flex-col items-center justify-center gap-2 font-semibold text-white max-w-4xl text-center px-4 sm:px-6 lg:px-8">
+          <div className="grid gap-5">
+            <div className="grid gap-1">
+              <h1 className="font-league-spartan font-bold text-h5 md:text-h1 text-primary-10">Apa itu Ambassador</h1>
+              <h1 className="font-league-spartan font-bold text-h5 md:text-h1 text-primary-10">Open House Fasilkom UI?</h1>
+            </div>
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-2">
+              <Image
+                src="/design-system/projector-final-mobile.svg"
+                alt="Open House Fasilkom UI 2026"
+                width={755}
+                height={600}
+                priority
+                className="block md:hidden w-full max-w-70 sm:max-w-95 md:max-w-125 lg:max-w-190 h-auto"
+              />
+              <Image
+                src="/design-system/projector-final.svg"
+                alt="Open House Fasilkom UI 2026"
+                width={755}
+                height={600}
+                priority
+                className="hidden md:block w-full max-w-70 sm:max-w-95 md:max-w-125 lg:max-w-190 h-auto"
+              />
+              <Image
+                src="/design-system/panda-mc-3.svg"
+                alt="Open House Fasilkom UI 2026"
+                width={257}
+                height={333}
+                priority
+                className="hidden md:block md:w-auto h-auto shrink-0"
+              />
+            </div>
+          </div>
+        </section>        
       </div>
     </main>
   );
