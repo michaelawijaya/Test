@@ -207,7 +207,32 @@ export default function LandingPage() {
               className="hidden md:block md:w-auto h-auto shrink-0"
             />
           </div>
-        </section>                        
+        </section>
+        <section className="flex flex-col items-center justify-center gap-12 md:gap-15 font-semibold text-white max-w-7xl text-center mb-7 px-4 sm:px-6 lg:px-8">
+          <div className="grid gap-1">
+            <h1 className="font-league-spartan font-bold text-h4 md:text-h1 text-primary-80 md:text-primary-10">Butuh bantuan atau punya pertanyaan lain?</h1>
+            <h4 className="font-aileron text-s7 md:text-s4 font-bold text-primary-80 md:text-primary-10">Kamu dapat hubungi kontak di bawah ini untuk informasi lebih lanjut ya!</h4>
+          </div>
+          <Image
+            src="/design-system/panda-megang-laptop.svg"
+            alt="Open House Fasilkom UI 2026"
+            width={681}
+            height={884}
+            priority
+            className="w-full h-auto max-w-xs md:max-w-sm lg:max-w-md"
+            sizes="(max-width: 768px) 320px, (max-width: 1024px) 384px, 448px"
+          />
+          <div className="grid grid-cols-2 grid-rows-1 max-w-xl w-full gap-4">
+            <Button variant="primary" className="col-span-1">
+              <MessageCircle className="w-6 h-6 text-white"/>
+              <p className="text-s7 font-aileron font-bold">Contact Person</p>
+            </Button>
+            <Button variant="primary" className="col-span-1">
+              <MessageCircle className="w-6 h-6 text-white"/>
+              <p className="text-s7 font-aileron font-bold">Contact Person</p>
+            </Button>
+          </div>
+        </section>                                
       </div>
     </main>
   );
