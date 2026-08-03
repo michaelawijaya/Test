@@ -103,7 +103,65 @@ export default function LandingPage() {
               />
             </div>
           </div>
-        </section>        
+        </section>
+        <section className="flex flex-col items-center justify-center gap-8 md:gap-50 font-semibold text-white max-w-4xl text-center">
+          <h1 className="font-league-spartan font-bold text-h5 md:text-h1 text-primary-10">
+            Ambassador 2025&apos;s Archive
+          </h1>
+          
+          <div className="relative lg:hidden w-full max-w-90 h-160 mx-auto">
+
+            <Image
+              src="/design-system/welcoming-ambassador-mobile.svg"
+              alt="Welcoming ambassador"
+              width={250}
+              height={370}
+              className="absolute top-2 left-2 z-10"
+            />
+
+            <Image
+              src="/design-system/webinar-with-alumni-mobile.svg"
+              alt="Webinar with alumni"
+              width={230}
+              height={340}
+              className="absolute top-22 right-2 z-50"
+            />
+
+            <Image
+              src="/design-system/farewell-party-mobile.svg"
+              alt="Farewell party"
+              width={200}
+              height={300}
+              className="absolute top-45 left-0 z-40"
+            />
+
+            <Image
+              src="/design-system/mentoring-1on1-mobile.svg"
+              alt="Mentoring"
+              width={220}
+              height={330}
+              className="absolute top-63 left-30 z-20"
+            />
+
+            <Image
+              src="/design-system/ristek-class-mobile.svg"
+              alt="Ristek"
+              width={200}
+              height={300}
+              className="absolute top-95 left-16 z-50"
+            />
+
+          </div>
+
+          
+          <div className="hidden lg:block relative w-full max-w-3xl h-105 mx-auto scale-150">
+            <Image src="/design-system/welcoming-ambassador.svg" alt="Welcoming ambassador" width={294.46303063995236} height={438.69154010670513} className="absolute top-20 left-0 z-40" />
+            <Image src="/design-system/farewell-party.svg" alt="Farewell party" width={294.46303063995236} height={438.69154010670513} className="absolute bottom-22/100 left-35/100 z-30" />
+            <Image src="/design-system/webinar-with-alumni.svg" alt="Webinar with alumni" width={294.46303063995236} height={438.69154010670513} className="absolute top-10 left-70/100 z-20" />
+            <Image src="/design-system/ristek-class.svg" alt="Ristek class" width={294.46303063995236} height={438.69154010670513} className="absolute top-58/100 left-30 z-50" />
+            <Image src="/design-system/mentoring-1on1.svg" alt="Mentoring 1-on-1" width={294.46303063995236} height={438.69154010670513} className="absolute top-60/100 right-8 z-10" />
+          </div>
+        </section>                
       </div>
     </main>
   );
