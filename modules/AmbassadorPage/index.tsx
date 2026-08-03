@@ -161,7 +161,53 @@ export default function LandingPage() {
             <Image src="/design-system/ristek-class.svg" alt="Ristek class" width={294.46303063995236} height={438.69154010670513} className="absolute top-58/100 left-30 z-50" />
             <Image src="/design-system/mentoring-1on1.svg" alt="Mentoring 1-on-1" width={294.46303063995236} height={438.69154010670513} className="absolute top-60/100 right-8 z-10" />
           </div>
-        </section>                
+        </section>
+        <section className="flex flex-col items-center justify-center gap-8 md:gap-15 font-semibold text-white text-center mt-0 md:mt-24 lg:mt-32 w-full px-4">
+          <div className="grid gap-1">
+            <h1 className="font-league-spartan font-bold text-h4 md:text-h1 text-primary-10">Need More Help?</h1>
+            <h4 className="font-aileron text-b7 md:text-s4 font-bold">&ldquo;Temukan berbagai pertanyaan serta jawaban seputar ambassador di sini!&ldquo;</h4>
+          </div>
+          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-15 max-w-7xl w-full">
+            <Accordion type="single" collapsible className="flex-1 min-w-0 md:max-w-6xl">
+              <AccordionItem value="item-1">
+                <AccordionTrigger>Apa aja benefit daftar Ambassador?</AccordionTrigger>
+                <AccordionContent className="wrap-break-word">Sebagai Ambassador, kamu akan terlibat langsung dalam promosi OH Fasilkom, berkesempatan membangun relasi dengan teman-teman dari seluruh Indonesia, mendapatkan akses ke program eksklusif seperti webinar dan mentoring, serta memperluas wawasan seputar teknologi, bisnis digital, dan masa depan industri IT.</AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-2">
+                <AccordionTrigger>Bagaimana jika aku memiliki kesibukan lain dan ingin mendaftar?</AccordionTrigger>
+                <AccordionContent>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo blanditiis adipisci optio cumque dicta nemo facilis, totam, consequatur eum quibusdam, placeat officiis nostrum. Consectetur velit molestias blanditiis inventore, eligendi deleniti.</AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-3">
+                <AccordionTrigger>Berapa lama program Ambassador ini berjalan?</AccordionTrigger>
+                <AccordionContent>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem voluptatibus ipsum ut quibusdam laboriosam minus, distinctio repudiandae delectus earum consectetur. Nesciunt perferendis, rerum quae dolorem tempora sed facere? Blanditiis, provident!</AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-4">
+                <AccordionTrigger>Harus bisa ngedit video gak kak??</AccordionTrigger>
+                <AccordionContent>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae tenetur quaerat, omnis architecto accusantium ex accusamus. Consectetur sed, distinctio, dolore unde necessitatibus itaque maiores odio aliquam tempora animi ipsum hic!</AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-5">
+                <AccordionTrigger>Aku dari luar Jabodetabek, bisa ikut juga gak?</AccordionTrigger>
+                <AccordionContent>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi blanditiis minus doloribus porro, quasi incidunt laudantium natus ad molestias? Ea omnis laudantium exercitationem quos perspiciatis totam blanditiis vero, suscipit magni.</AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-6">
+                <AccordionTrigger>Apakah program ini berbayar?</AccordionTrigger>
+                <AccordionContent>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia facilis corporis repudiandae amet est, totam incidunt doloremque voluptatem natus minima itaque voluptate eos molestiae eveniet ex obcaecati eligendi. Atque, natus!</AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-7">
+                <AccordionTrigger>Harus terkenal ya kak?</AccordionTrigger>
+                <AccordionContent>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat at ex vel! Placeat iste laudantium, rerum quod recusandae mollitia vitae impedit quisquam minus non delectus distinctio aperiam vel quaerat doloremque.</AccordionContent>
+              </AccordionItem>
+            </Accordion>
+            <Image
+              src="/design-system/panda-bertanya-tanya.svg"
+              alt="Open House Fasilkom UI 2026"
+              width={337}
+              height={381}
+              priority
+              className="hidden md:block md:w-auto h-auto shrink-0"
+            />
+          </div>
+        </section>                        
       </div>
     </main>
   );
