@@ -24,7 +24,7 @@ function AccordionItem({
   return (
     <AccordionPrimitive.Item
       className={cn(
-        "bg-primary-70 text-primary-10 hover:border-primary-50 hover:text-primary-70 data-open:text-primary-70 data-open:border-primary-50 rounded-xl border-2 border-transparent drop-shadow-lg transition-colors hover:bg-[#F3ECFF] data-open:bg-[#F3ECFF]",
+        "min-w-0 bg-primary-70 text-primary-10 hover:border-primary-50 hover:text-primary-70 data-open:text-primary-70 data-open:border-primary-50 rounded-xl border-2 border-transparent drop-shadow-lg transition-colors hover:bg-[#F3ECFF] data-open:bg-[#F3ECFF]",
         className,
       )}
       data-slot="accordion-item"
@@ -76,7 +76,7 @@ function AccordionContent({
     >
       <div
         className={cn(
-          "[&_a]:hover:text-foreground pt-0 pb-2.5 [&_a]:underline [&_a]:underline-offset-3 [&_p:not(:last-child)]:mb-4",
+          "[&_a]:hover:text-foreground pt-0 pb-2.5 [&_a]:underline [&_a]:underline-offset-3 [&_p:not(:last-child)]:mb-4 text-left wrap-break-word",
           "px-4",
           className,
         )}

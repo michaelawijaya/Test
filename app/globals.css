@@ -263,3 +263,16 @@
 }
 
 /* ======================== SHADCN BUILT IN [END]========================= */
+
+@layer utilities {
+  .bg-page-gradient {
+    background: linear-gradient(
+      180deg,
+      #040f27 0%,
+      #0c265e 25%,
+      #3f178d 50%,
+      #4e319e 75%,
+      #8490db 100%
+    );
+  }
+}

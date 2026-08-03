@@ -158,7 +158,7 @@ const Countdown = ({
               type={block.type}
             />
             {index < countdownBlocks.length - 1 && (
-              <span className="font-league-spartan font-bold text-[100px] leading-12">
+              <span className="font-league-spartan font-bold text-[50px] lg:text-[100px] leading-12">
                 :
               </span>
             )}
