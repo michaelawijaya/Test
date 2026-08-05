@@ -10,7 +10,7 @@ export default function Projector({
     <div className={`flex w-full flex-col items-center ${className}`}>
       
       <Image
-        src="/design-system/projector-hanger.svg"
+        src="/design-system/projector/projector-hanger.svg"
         alt=""
         aria-hidden="true"
         width={20}
@@ -18,7 +18,6 @@ export default function Projector({
         className="-mb-1.5 h-auto z-10 w-[clamp(6px,2%,14px)]"
       />
 
-      
       <div className="flex w-full flex-col gap-[4%] z-20 text-b8 md:text-b6 rounded-2xl border-primary-90 bg-[#F2EBFF]/80 px-[6%] py-[5%] border-6">
         <p className="text-center leading-snug text-primary-90">
           {description}
@@ -43,7 +42,7 @@ export default function Projector({
 
       
       <Image
-        src="/design-system/projector-legs.svg"
+        src="/design-system/projector/projector-legs.svg"
         alt=""
         width={20}
         height={20}

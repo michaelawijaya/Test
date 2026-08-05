@@ -9,7 +9,8 @@ import { MessageCircle } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "~/components/ui/accordion";
 import Countdown from "~/components/elements/Countdown"
 import Projector from "@/components/elements/Projector"
-
+import ArchiveCard from "@/components/elements/Archive/ArchiveCard"
+import ArchiveLabel from "@/components/elements/Archive/ArchiveLabel"
 
 
 export default function LandingPage() {
@@ -89,7 +90,7 @@ export default function LandingPage() {
                         { value: "200+", label: "Pendaftar dari seluruh Indonesia" },
                         { value: "250+", label: "Pengguna Referral Code" },
                       ]}
-                className="font-aileron"
+                className=""
               />
               <Image
                 src="/design-system/panda-mc-3.svg"
@@ -106,59 +107,208 @@ export default function LandingPage() {
           <h1 className="font-league-spartan font-bold text-h5 md:text-h1 text-primary-10">
             Ambassador 2025&apos;s Archive
           </h1>
-          <div className="relative lg:hidden w-full max-w-90 h-160 mx-auto">
-            <Image
-              src="/design-system/welcoming-ambassador-mobile.svg"
-              alt="Welcoming ambassador"
-              width={250}
-              height={370}
-              className="absolute top-2 left-2 z-10"
-            />
+          <div className="relative w-full max-w-90 h-160 mx-auto">
+            <div className="lg:hidden">
+              <ArchiveCard
+                image="/design-system/archive/archive-image-welcoming-ambassador.svg"
+                imageAlt="Mentoring 1 on 1"
+                className="absolute z-20 scale-55 rotate-3 -left-28 -top-10"
+                label={
+                  <ArchiveLabel 
+                    className="text-s7 text-primary-90 font-bold top-5 -left-3">
+                      Welcoming Ambassador
+                  </ArchiveLabel>}
+                decoration={
+                  <Image
+                    src="/design-system/archive/archive-paper-clip.svg"
+                    alt=""
+                    width={27}
+                    height={0}
+                    className="absolute bottom-51 left-88 rotate-"
+                  />
+                }
+              />
+              <ArchiveCard
+                image="/design-system/archive/archive-image-webinar-with-alumni.svg"
+                imageAlt="Mentoring 1 on 1"
+                className="absolute z-30 scale-55 -rotate-8 top-15 -right-20"
+                label={
+                  <ArchiveLabel 
+                    className="text-s7 text-primary-90 font-bold top-2 -left-3">
+                      Webinar with Alumni
+                  </ArchiveLabel>}
+                decoration={
+                  <Image
+                    src="/design-system/archive/archive-pin.svg"
+                    alt=""
+                    width={70}
+                    height={20}
+                    className="absolute bottom-59 left-70"
+                  />
+                }
+              />
+              <ArchiveCard
+                image="/design-system/archive/archive-image-farewell-party.svg"
+                imageAlt="Mentoring 1 on 1"
+                className="absolute z-20 scale-55 -rotate-96 -left-36 top-45"
+                label={
+                  <ArchiveLabel 
+                    className="text-s7 text-primary-90 font-bold top-3 left-75 rotate-90">
+                      Farewell Party
+                  </ArchiveLabel>}
+                decoration={
+                  <Image
+                    src="/design-system/archive/archive-binder-clip.svg"
+                    alt=""
+                    width={130}
+                    height={20}
+                    className="absolute bottom-25 -right-18 rotate-95"
+                  />
+                }
+              />            
+              <ArchiveCard
+                image="/design-system/archive/archive-image-mentoring1on1.svg"
+                imageAlt="Mentoring 1 on 1"
+                className="absolute z-10 scale-55 rotate-8 top-55 -right-25"
+                label={
+                  <ArchiveLabel 
+                    className="text-s7 text-primary-90 font-bold top-1 -right-2">
+                      Mentoring 1-ON-1
+                  </ArchiveLabel>}
+                decoration={
+                  <Image
+                    src="/design-system/archive/archive-paper-clip.svg"
+                    alt=""
+                    width={20}
+                    height={20}
+                    className="absolute bottom-0 left-92 rotate-95"
+                  />
+                }
+              />                
+              <ArchiveCard
+                image="/design-system/archive/archive-image-ristek-class.svg"
+                imageAlt="Mentoring 1 on 1"
+                className="absolute z-30 scale-70 rotate-2 top-93 -left-5"
+                label={
+                  <ArchiveLabel 
+                    className="text-s7 text-primary-90 font-bold top-2 -left-2">
+                      RISTEK Class
+                  </ArchiveLabel>}
+                decoration={
+                  <Image
+                    src="/design-system/archive/archive-pin.svg"
+                    alt=""
+                    width={50}
+                    height={20}
+                    className="absolute bottom-48 left-65 rotate-0"
+                  />
+                }
+              />
 
-            <Image
-              src="/design-system/webinar-with-alumni-mobile.svg"
-              alt="Webinar with alumni"
-              width={230}
-              height={340}
-              className="absolute top-22 left-27 z-50"
-            />
+            </div>
 
-            <Image
-              src="/design-system/farewell-party-mobile.svg"
-              alt="Farewell party"
-              width={200}
-              height={300}
-              className="absolute top-45 left-0 z-40"
-            />
-
-            <Image
-              src="/design-system/mentoring-1on1-mobile.svg"
-              alt="Mentoring"
-              width={220}
-              height={330}
-              className="absolute top-69 left-30 z-20"
-            />
-
-            <Image
-              src="/design-system/ristek-class-mobile.svg"
-              alt="Ristek"
-              width={200}
-              height={300}
-              className="absolute top-95 left-16 z-50"
-            />
-
+            <div className="hidden lg:block">
+              <ArchiveCard
+                image="/design-system/archive/archive-image-welcoming-ambassador.svg"
+                imageAlt="Mentoring 1 on 1"
+                className="absolute z-40 -left-95 rotate-4"
+                label={
+                  <ArchiveLabel 
+                    className="text-s7 text-primary-90 font-bold top-5 -left-3">
+                      Welcoming Ambassador
+                  </ArchiveLabel>}
+                decoration={
+                  <Image
+                    src="/design-system/archive/archive-paper-clip.svg"
+                    alt=""
+                    width={27}
+                    height={0}
+                    className="absolute bottom-51 left-88 rotate-"
+                  />
+                }
+              />
+              <ArchiveCard
+                image="/design-system/archive/archive-image-farewell-party.svg"
+                imageAlt="Mentoring 1 on 1"
+                className="absolute z-30 -top-12 -left-15 -rotate-100"
+                label={
+                  <ArchiveLabel 
+                    className="text-s7 text-primary-90 font-bold top-45 -right-8 rotate-90">
+                      Farewell Party
+                  </ArchiveLabel>}
+                decoration={
+                  <Image
+                    src="/design-system/archive/archive-binder-clip.svg"
+                    alt=""
+                    width={130}
+                    height={20}
+                    className="absolute bottom-20 -right-18 rotate-95"
+                  />
+                }
+              />
+              <ArchiveCard
+                image="/design-system/archive/archive-image-webinar-with-alumni.svg"
+                imageAlt="Mentoring 1 on 1"
+                className="absolute z-20 -top-10 -right-80 rotate-7"
+                label={
+                  <ArchiveLabel 
+                    className="text-s7 text-primary-90 font-bold top-54 -right-3">
+                      Webinar with Alumni
+                  </ArchiveLabel>}
+                decoration={
+                  <Image
+                    src="/design-system/archive/archive-pin.svg"
+                    alt=""
+                    width={70}
+                    height={20}
+                    className="absolute bottom-61 left-40 -rotate-90"
+                  />
+                }
+              />
+              <ArchiveCard
+                image="/design-system/archive/archive-image-ristek-class.svg"
+                imageAlt="Mentoring 1 on 1"
+                className="absolute z-50 bottom-27 -left-60 rotate-4"
+                label={
+                  <ArchiveLabel 
+                    className="text-s7 text-primary-90 font-bold top-2 -left-2">
+                      Ristek Class
+                  </ArchiveLabel>}
+                decoration={
+                  <Image
+                    src="/design-system/archive/archive-pin.svg"
+                    alt=""
+                    width={70}
+                    height={20}
+                    className="absolute bottom-60 left-80 rotate-0"
+                  />
+                }
+              />
+              <ArchiveCard
+                image="/design-system/archive/archive-image-mentoring1on1.svg"
+                imageAlt="Mentoring 1 on 1"
+                className="absolute z-10 top-60 -right-40 -rotate-10"
+                label={
+                  <ArchiveLabel 
+                    className="text-s7 text-primary-90 font-bold top-53 left-55">
+                      Mentoring 1-ON-1
+                  </ArchiveLabel>}
+                decoration={
+                  <Image
+                    src="/design-system/archive/archive-paper-clip.svg"
+                    alt=""
+                    width={20}
+                    height={20}
+                    className="absolute bottom-50 left-92 rotate-95"
+                  />
+                }
+              />
+            </div>
+            
           </div>
-
           
-          <div className="hidden lg:block relative w-full max-w-3xl h-105 mx-auto scale-150">
-            <Image src="/design-system/welcoming-ambassador.svg" alt="Welcoming ambassador" width={294} height={438} className="absolute top-20 left-0 z-40" />
-            <Image src="/design-system/farewell-party.svg" alt="Farewell party" width={294} height={438} className="absolute bottom-22/100 left-35/100 z-30" />
-            <Image src="/design-system/webinar-with-alumni.svg" alt="Webinar with alumni" width={294} height={438} className="absolute top-10 left-70/100 z-20" />
-            <Image src="/design-system/ristek-class.svg" alt="Ristek class" width={294} height={438} className="absolute top-58/100 left-30 z-50" />
-            <Image src="/design-system/mentoring-1on1.svg" alt="Mentoring 1-on-1" width={294} height={438} className="absolute top-60/100 right-8 z-10" />
-          </div>
         </section>
-        <section className="flex flex-col items-center justify-center gap-8 md:gap-15 font-semibold text-white text-center -mt-25 md:mt-24 lg:mt-32 w-full px-4">
+        <section className="flex flex-col items-center justify-center gap-8 md:gap-15 font-semibold text-white text-center -mt-25 md:mt-24 lg:mt-0 w-full px-4">
           <div className="grid gap-1">
             <h1 className="font-league-spartan font-bold text-h4 md:text-h1 text-primary-10">Need More Help?</h1>
             <h4 className="font-aileron text-b7 md:text-s4 font-bold">&ldquo;Temukan berbagai pertanyaan serta jawaban seputar ambassador di sini!&ldquo;</h4>
