@@ -8,6 +8,8 @@ import { Book } from "lucide-react";
 import { MessageCircle } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "~/components/ui/accordion";
 import Countdown from "~/components/elements/Countdown"
+import Projector from "@/components/elements/Projector"
+
 
 
 export default function LandingPage() {
@@ -70,28 +72,24 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
-        <section className="flex flex-col items-center justify-center gap-2 font-semibold text-white max-w-4xl text-center px-4 sm:px-6 lg:px-8">
+        <section className="flex flex-col items-center justify-center gap-2 font-semibold text-white max-w-6xl text-center px-4 sm:px-6 lg:px-8">
           <div className="grid gap-5">
             <div className="grid gap-1">
               <h1 className="font-league-spartan font-bold text-h5 md:text-h1 text-primary-10">Apa itu Ambassador</h1>
               <h1 className="font-league-spartan font-bold text-h5 md:text-h1 text-primary-10">Open House Fasilkom UI?</h1>
             </div>
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-2">
-              <Image
-                src="/design-system/projector-final-mobile.svg"
-                alt="Open House Fasilkom UI 2026"
-                width={755}
-                height={600}
-                priority
-                className="block md:hidden w-full max-w-70 sm:max-w-95 md:max-w-125 lg:max-w-190 h-auto"
-              />
-              <Image
-                src="/design-system/projector-final.svg"
-                alt="Open House Fasilkom UI 2026"
-                width={755}
-                height={600}
-                priority
-                className="hidden md:block w-full max-w-70 sm:max-w-95 md:max-w-125 lg:max-w-190 h-auto"
+            <div className="flex flex-col w-full md:flex-row items-center justify-center md:gap-25">
+              <Projector 
+                description={
+                  <>
+                    <strong>Program Ambassador</strong> Open House Fasilkom UI 2026 mengajak anak-anak SMA/K sederajat dan influencer untuk meningkatkan <strong>brand awareness Fasilkom UI.</strong> Ambassador bertugas membuat konten digital untuk menyebarkan informasi mengenai Open House Fasilkom UI dan Fasilkom UI.
+                  </>
+                }
+                stats={[
+                        { value: "200+", label: "Pendaftar dari seluruh Indonesia" },
+                        { value: "250+", label: "Pengguna Referral Code" },
+                      ]}
+                className="font-aileron"
               />
               <Image
                 src="/design-system/panda-mc-3.svg"
@@ -108,9 +106,7 @@ export default function LandingPage() {
           <h1 className="font-league-spartan font-bold text-h5 md:text-h1 text-primary-10">
             Ambassador 2025&apos;s Archive
           </h1>
-          
           <div className="relative lg:hidden w-full max-w-90 h-160 mx-auto">
-
             <Image
               src="/design-system/welcoming-ambassador-mobile.svg"
               alt="Welcoming ambassador"
@@ -124,7 +120,7 @@ export default function LandingPage() {
               alt="Webinar with alumni"
               width={230}
               height={340}
-              className="absolute top-22 right-2 z-50"
+              className="absolute top-22 left-27 z-50"
             />
 
             <Image
@@ -140,7 +136,7 @@ export default function LandingPage() {
               alt="Mentoring"
               width={220}
               height={330}
-              className="absolute top-63 left-30 z-20"
+              className="absolute top-69 left-30 z-20"
             />
 
             <Image
@@ -155,14 +151,14 @@ export default function LandingPage() {
 
           
           <div className="hidden lg:block relative w-full max-w-3xl h-105 mx-auto scale-150">
-            <Image src="/design-system/welcoming-ambassador.svg" alt="Welcoming ambassador" width={294.46303063995236} height={438.69154010670513} className="absolute top-20 left-0 z-40" />
-            <Image src="/design-system/farewell-party.svg" alt="Farewell party" width={294.46303063995236} height={438.69154010670513} className="absolute bottom-22/100 left-35/100 z-30" />
-            <Image src="/design-system/webinar-with-alumni.svg" alt="Webinar with alumni" width={294.46303063995236} height={438.69154010670513} className="absolute top-10 left-70/100 z-20" />
-            <Image src="/design-system/ristek-class.svg" alt="Ristek class" width={294.46303063995236} height={438.69154010670513} className="absolute top-58/100 left-30 z-50" />
-            <Image src="/design-system/mentoring-1on1.svg" alt="Mentoring 1-on-1" width={294.46303063995236} height={438.69154010670513} className="absolute top-60/100 right-8 z-10" />
+            <Image src="/design-system/welcoming-ambassador.svg" alt="Welcoming ambassador" width={294} height={438} className="absolute top-20 left-0 z-40" />
+            <Image src="/design-system/farewell-party.svg" alt="Farewell party" width={294} height={438} className="absolute bottom-22/100 left-35/100 z-30" />
+            <Image src="/design-system/webinar-with-alumni.svg" alt="Webinar with alumni" width={294} height={438} className="absolute top-10 left-70/100 z-20" />
+            <Image src="/design-system/ristek-class.svg" alt="Ristek class" width={294} height={438} className="absolute top-58/100 left-30 z-50" />
+            <Image src="/design-system/mentoring-1on1.svg" alt="Mentoring 1-on-1" width={294} height={438} className="absolute top-60/100 right-8 z-10" />
           </div>
         </section>
-        <section className="flex flex-col items-center justify-center gap-8 md:gap-15 font-semibold text-white text-center mt-0 md:mt-24 lg:mt-32 w-full px-4">
+        <section className="flex flex-col items-center justify-center gap-8 md:gap-15 font-semibold text-white text-center -mt-25 md:mt-24 lg:mt-32 w-full px-4">
           <div className="grid gap-1">
             <h1 className="font-league-spartan font-bold text-h4 md:text-h1 text-primary-10">Need More Help?</h1>
             <h4 className="font-aileron text-b7 md:text-s4 font-bold">&ldquo;Temukan berbagai pertanyaan serta jawaban seputar ambassador di sini!&ldquo;</h4>
