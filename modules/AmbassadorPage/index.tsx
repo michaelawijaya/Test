@@ -73,8 +73,16 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
-        <section className="flex flex-col items-center justify-center gap-2 font-semibold text-white max-w-6xl text-center px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-5">
+        <section className="relative flex flex-col items-center justify-center gap-2 font-semibold text-white max-w-6xl text-center px-4 sm:px-6 lg:px-8">
+          <Image
+            src="/design-system/efek-sparkle-kiri.png"
+            alt=""
+            width={400}
+            height={0}
+            className="hidden absolute md:block z-0 h-auto bottom-20 md:scale-230 md:-left-115"
+          />
+          
+          <div className="grid gap-5 z-10">
             <div className="grid gap-1">
               <h1 className="font-league-spartan font-bold text-h5 md:text-h1 text-primary-10">Apa itu Ambassador</h1>
               <h1 className="font-league-spartan font-bold text-h5 md:text-h1 text-primary-10">Open House Fasilkom UI?</h1>
@@ -103,7 +111,8 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
-        <section className="flex flex-col items-center justify-center gap-8 md:gap-50 font-semibold text-white max-w-4xl text-center">
+        <section className="relative flex flex-col items-center justify-center gap-8 md:gap-50 font-semibold text-white max-w-4xl text-center">
+
           <h1 className="font-league-spartan font-bold text-h5 md:text-h1 text-primary-10">
             Ambassador 2025&apos;s Archive
           </h1>
@@ -308,7 +317,21 @@ export default function LandingPage() {
           </div>
           
         </section>
-        <section className="flex flex-col items-center justify-center gap-8 md:gap-15 font-semibold text-white text-center -mt-25 md:mt-24 lg:mt-0 w-full px-4">
+        <section className="relative flex flex-col items-center justify-center gap-8 md:gap-15 font-semibold text-white text-center -mt-25 md:mt-24 lg:mt-0 w-full px-4">
+          <Image
+            src="/design-system/kristal-kiri.svg"
+            alt=""
+            width={80}
+            height={0}
+            className="absolute z-0 h-auto bottom-190 -left-4 md:scale-230 md:left-10 "
+          />
+          <Image
+            src="/design-system/kristal-kanan.svg"
+            alt=""
+            width={60}
+            height={0}
+            className="absolute z-0 h-auto bottom-190 right-0 md:scale-230 md:right-10"
+          />
           <div className="grid gap-1">
             <h1 className="font-league-spartan font-bold text-h4 md:text-h1 text-primary-10">Need More Help?</h1>
             <h4 className="font-aileron text-b7 md:text-s4 font-bold">&ldquo;Temukan berbagai pertanyaan serta jawaban seputar ambassador di sini!&ldquo;</h4>
